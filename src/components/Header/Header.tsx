@@ -17,15 +17,14 @@ export const Header: FC = () => {
                 <div className="header__info">
                     <h1>
                         <p>Hello Friend! I'm,</p>
-                        <span>Ekaterina Shadrina,</span>
+                        <span>Dominic Savier,</span>
                         <p>
-                            a passionate frontend developer focused on creating
-                            interactive, accessible, and responsive interfaces.
+                        A DevOps virtuoso driven by passion, dedicated to sculpting interactive, accessible, and responsive digital realms.
                         </p>
                     </h1>
                     <div className="header__links">
                         <a className="header__link-mywork btn" href="#projects">See My Work</a>
-                        <a className="header__link-resume btn" href={require("../../documents/ShadrinaEO.pdf")} target="_blank">View Resume</a>
+                        <a className="header__link-resume btn" href={require("../../documents/Dominic_savier.pdf")} target="_blank">View Resume</a>
                     </div>
                 </div>
                 <div className="header__picture">
