@@ -4,7 +4,7 @@ import {StyledResume} from "./Resume.styles"
 
 export const Resume: FC = () => {
   return (
-    <StyledResume href={require("../../documents/ShadrinaEO.pdf")} target="_blank">
+    <StyledResume href={require("../../documents/Dominic_savier.pdf")} target="_blank">
         <figure aria-hidden="true">
         <AiOutlineFilePdf className="resume__icon"/>
       </figure>
