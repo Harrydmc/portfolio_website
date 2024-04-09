@@ -26,8 +26,8 @@ export const Footer = () => {
                         ))}
                     </ul>
                     <p className="footer__contact-gmail">
-                        <a href="mailto:eolshadrina@gmail.com">
-                            <span>eolshadrina@gmail.com</span>
+                        <a href="mailto:Dominicsavier.j@gmail.com">
+                            <span>Dominicsavier.j@gmail.com</span>
                         </a>
                     </p>
                 </div>

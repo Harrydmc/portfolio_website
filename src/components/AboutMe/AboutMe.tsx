@@ -16,10 +16,7 @@ export const AboutMe: FC = () => {
                     <div className="aboutme__info">
                         <h3>Summary</h3>
                         <p>
-                            I'm a Frontend Developer whose whole interest is
-                            building interactive, accessible, and responsive
-                            websites. My project section contains some beautiful
-                            websites I've built.
+                        I'm a Passionate DevOps Engineer dedicated to crafting seamless, accessible, and responsive digital experiences. Specializing in building robust CI/CD pipelines for lightning-fast software delivery Thrives on optimizing deployment processes to ensure user delight at every touchpoint
                         </p>
 
                         <p>
