@@ -14,3 +14,9 @@ This is my portfolio website
 
 3. Launch the project with `npm start`
 
+
+## Instruction for Docker 
+
+ 1. Build the image  'docker build . -t continer_name
+
+ 2. run the imgae by docker run -p 8080:80 continer_name
