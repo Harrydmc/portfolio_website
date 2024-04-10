@@ -1,6 +1,7 @@
 {
   "homepage": "https://portfolio-test-j770.onrender.com",
   "name": "portfolio_website",
+  "author": "Dominic Savier<dominicsavier.j@gmail.com>",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
