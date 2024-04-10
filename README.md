@@ -17,6 +17,6 @@ This is my portfolio website
 
 ## Instruction for Docker 
 
- 1. Build the image  'docker build . -t continer_name
+ 1. Build the image  `docker build . -t continer_name`
 
- 2. run the imgae by docker run -p 8080:80 continer_name
+ 2. run the imagae by `docker run -p 8080:80 continer_name`
