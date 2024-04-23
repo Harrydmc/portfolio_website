@@ -10,12 +10,12 @@ pipeline {
             agent {
                 docker {
                     image 'node:latest'
-                    args '-v /var/run/docker.sock:/var/run/docker.sock'
+                    
                     reuseNode true
                 }
             }
             steps {
-                sh 'npm install'
+                sh 'npm ci'
                 sh 'npm run build'
             }
         }
@@ -24,5 +24,14 @@ pipeline {
                sh 'docker build -f Dockerfile-new -t dominicsavier/my-portfolio .'
             }
         }
+        stage('Docker Push') {
+      agent any
+      steps {
+        withCredentials([usernamePassword(credentialsId: 'docker-hub-cred', passwordVariable: 'pwd', usernameVariable: 'user')])  {
+          sh "docker login -u ${user} -p ${pwd}"
+          sh 'docker push dominicsavier/my-portfolio'
+        }
+      }
+     }
     }
 }
