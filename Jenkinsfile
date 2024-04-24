@@ -1,5 +1,8 @@
 pipeline {
     agent any
+     environment {
+        IMAGE_TAG = "${BUILD_NUMBER}"
+    }
     stages {
         stage('checkout') { 
             steps {
@@ -21,7 +24,7 @@ pipeline {
         }
         stage('Docker-Build'){
             steps {
-               sh 'docker build -f Dockerfile-new -t dominicsavier/my-portfolio .'
+               sh 'docker build -f Dockerfile-new -t dominicsavier/my-portfolio:${BUILD_NUMBER} .'
             }
         }
         stage('Docker Push') {
@@ -29,7 +32,7 @@ pipeline {
       steps {
         withCredentials([usernamePassword(credentialsId: 'docker-hub-cred', passwordVariable: 'pwd', usernameVariable: 'user')])  {
           sh "docker login -u ${user} -p ${pwd}"
-          sh 'docker push dominicsavier/my-portfolio'
+          sh 'docker push dominicsavier/my-portfolio:${BUILD_NUMBER}'
         }
       }
      }
